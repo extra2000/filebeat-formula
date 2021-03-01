@@ -7,7 +7,6 @@ spec:
   containers:
   - name: fb01
     image: {{ filebeat.image.name }}
-    command: ['filebeat']
     resources:
       requests:
         memory: {{ filebeat.resources.requests.memory }}
@@ -16,9 +15,6 @@ spec:
     volumeMounts:
     - mountPath: /usr/share/filebeat/filebeat.yml
       name: filebeat-conf
-    env:
-    - name: PATH
-      value: /usr/share/filebeat:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
   volumes:
   - name: filebeat-conf
     hostPath:
