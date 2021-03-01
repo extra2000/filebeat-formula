@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://github.com/extra2000/filebeat-formula/compare/v1.0.0...v1.0.1) (2021-03-01)
+
+
+### Fixes
+
+* **filebeat-pod.yaml:** Remove workarounds for Podman 2.x ([0774f26](https://github.com/extra2000/filebeat-formula/commit/0774f26d5eeb6947c8863580eeb8e8b80cdf8f87))
+
 ## 1.0.0 (2021-02-23)
 
 
