@@ -34,3 +34,6 @@ filebeat:
         - type: log
           paths:
             - /var/log/filebeat/*
+    podcfg:
+      volumeMounts: {}
+      volumes: {}
