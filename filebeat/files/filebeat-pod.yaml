@@ -12,6 +12,11 @@ spec:
         memory: {{ filebeat.resources.requests.memory }}
       limits:
         memory: {{ filebeat.resources.limits.memory }}
+    securityContext:
+      allowPrivilegeEscalation: true
+      privileged: false
+      seLinuxOptions:
+        type: spc_t
     volumeMounts:
     - mountPath: /usr/share/filebeat/filebeat.yml
       name: filebeat-conf
