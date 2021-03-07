@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/extra2000/filebeat-formula/compare/v1.0.1...v1.1.0) (2021-03-07)
+
+
+### Features
+
+* **filebeat-pod.yaml:** Make volume customizable ([07b53ee](https://github.com/extra2000/filebeat-formula/commit/07b53ee2f000caeac9d01863a45f132714f41611))
+
+
+### Fixes
+
+* **filebeat-pod.yaml:** Disable SELinux to prevent permission error during volume mounting to log files ([8898b83](https://github.com/extra2000/filebeat-formula/commit/8898b834c791513732c2ed450d716f0f12ee2eba))
+* **network:** Make `bridge` customizable to prevent pod networking conflicts ([af04d6f](https://github.com/extra2000/filebeat-formula/commit/af04d6fcd32c1a1080b31e694bf620d26b464478))
+
 ### [1.0.1](https://github.com/extra2000/filebeat-formula/compare/v1.0.0...v1.0.1) (2021-03-01)
 
 
