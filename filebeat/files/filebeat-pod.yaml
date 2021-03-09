@@ -18,6 +18,8 @@ spec:
       seLinuxOptions:
         type: spc_t
     volumeMounts:
+    - mountPath: /usr/share/filebeat/data
+      name: filebeat-data
     - mountPath: /usr/share/filebeat/filebeat.yml
       name: filebeat-conf
       readOnly: true
@@ -27,6 +29,9 @@ spec:
       readOnly: true
     {% endfor %}
   volumes:
+  - name: filebeat-data
+    persistentVolumeClaim:
+      claimName: filebeat-data
   - name: filebeat-conf
     hostPath:
       path: /opt/filebeat/filebeat.yml
