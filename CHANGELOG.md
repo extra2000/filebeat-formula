@@ -1,5 +1,17 @@
 # Changelog
 
+### [1.1.1](https://github.com/extra2000/filebeat-formula/compare/v1.1.0...v1.1.1) (2021-03-09)
+
+
+### Fixes
+
+* **filebeat-pod:** Add persistent data volume to keep a history of sent logs which will prevents a large number of old logs from being sent after `filebeat` restart ([2f0af65](https://github.com/extra2000/filebeat-formula/commit/2f0af65637250f6f5662821c1bad774d3a846119))
+
+
+### Documentations
+
+* **pillar.example:** Add `podcfg` ([2cb6850](https://github.com/extra2000/filebeat-formula/commit/2cb6850bf4194bbbec627ae97fd7340197b1a92d))
+
 ## [1.1.0](https://github.com/extra2000/filebeat-formula/compare/v1.0.1...v1.1.0) (2021-03-07)
 
 
