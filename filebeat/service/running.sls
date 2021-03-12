@@ -13,8 +13,17 @@ filebeat-image-present:
         until: true
     - runas: {{ FILEBEAT.hostuser.name }}
 
-filebeat-containers-running:
+filebeat-pod-destroy-if-exists:
+  module.run:
+    - state.sls:
+      - mods:
+        - filebeat.service.destroy
+
+filebeat-pod-running:
   cmd.run:
     - name: podman play kube --network=filebeatnet filebeat-pod.yaml
     - cwd: /opt/filebeat
     - runas: {{ FILEBEAT.hostuser.name }}
+    - require:
+      - cmd: filebeat-image-present
+      - module: filebeat-pod-destroy-if-exists
