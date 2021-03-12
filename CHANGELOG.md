@@ -1,5 +1,20 @@
 # Changelog
 
+### [1.1.2](https://github.com/extra2000/filebeat-formula/compare/v1.1.1...v1.1.2) (2021-03-12)
+
+
+### Code Refactoring
+
+* **pod:** Add `labels` ([dcb1c36](https://github.com/extra2000/filebeat-formula/commit/dcb1c36e91168275860aec19585cb10ceb337f6b))
+* **pod:** Explicitly define `capabilities` ([4d0703b](https://github.com/extra2000/filebeat-formula/commit/4d0703bacc8ae3aaa9815584bdb098999bc7b026))
+* **service:** Rename `dead.sls` to `destroy.sls` ([96f3874](https://github.com/extra2000/filebeat-formula/commit/96f3874146a2747aae57d365fd31fcce83b831ca))
+
+
+### Fixes
+
+* **service:** Pull image first before deployment to prevent TLS handshake timeout error ([c541188](https://github.com/extra2000/filebeat-formula/commit/c541188dd6fd61bcc84cf3b1b933e7b1c8b70c36))
+* **service:** Remove existing Filebeat pod before deploying new Filebeat pod. This will fix deployment error when existing Filebeat pod exists. ([f5fad5d](https://github.com/extra2000/filebeat-formula/commit/f5fad5d0e7361734bcf260e0c39e25dad9a8edf6))
+
 ### [1.1.1](https://github.com/extra2000/filebeat-formula/compare/v1.1.0...v1.1.1) (2021-03-09)
 
 
