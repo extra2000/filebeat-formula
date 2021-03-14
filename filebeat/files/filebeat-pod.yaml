@@ -45,6 +45,6 @@ spec:
       path: /opt/filebeat/filebeat.yml
   {% for vol in filebeat.podcfg.volumes %}
   - name: {{ vol.name }}
-    hostPath:
-      path: {{ vol.hostPath.path }}
+    {{ vol.type }}:
+      {{ vol.opt }}
   {% endfor %}
