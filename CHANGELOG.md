@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/extra2000/filebeat-formula/compare/v1.1.2...v2.0.0) (2021-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **pod:** Pillar format for `podcfg.volumes` has changed.
+
+### Features
+
+* **pod:** Add support for volume other than `hostPath` for example `persistentVolumeClaim` ([6c4c8af](https://github.com/extra2000/filebeat-formula/commit/6c4c8af37f14a18c5536a734b2cca93daff6482c))
+
 ### [1.1.2](https://github.com/extra2000/filebeat-formula/compare/v1.1.1...v1.1.2) (2021-03-12)
 
 
