@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/extra2000/filebeat-formula/compare/v2.0.0...v2.1.0) (2021-03-15)
+
+
+### Features
+
+* **filebeat:** Upgrade from version `7.10.1` to `7.11.2` ([ad8d098](https://github.com/extra2000/filebeat-formula/commit/ad8d09886b15f4cf1101467208081aa15c2694d8))
+
 ## [2.0.0](https://github.com/extra2000/filebeat-formula/compare/v1.1.2...v2.0.0) (2021-03-14)
 
 
