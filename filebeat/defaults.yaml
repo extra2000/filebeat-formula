@@ -13,7 +13,7 @@ filebeat:
       bridge: cni-podman1
   filebeat:
     image:
-      name: docker.io/elastic/filebeat:7.11.2
+      name: docker.elastic.co/beats/filebeat:7.12.1
     resources:
       requests:
         memory: 100Mi
