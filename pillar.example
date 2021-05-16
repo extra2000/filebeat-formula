@@ -19,7 +19,7 @@ filebeat:
         limits:
           memory: 100Mi
       ymlcfg:
-        name: filebeat-box
+        name: beats-box
         logging.level: warning
         logging.to_files: true
         logging.files:
