@@ -34,7 +34,7 @@ spec:
     {% for volMount in filebeat.podcfg.volumeMounts %}
     - mountPath: {{ volMount.mountPath }}
       name: {{ volMount.name }}
-      readOnly: true
+      readOnly: {{ volMount.readOnly | string | lower }}
     {% endfor %}
   volumes:
   - name: filebeat-data
