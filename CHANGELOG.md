@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.2.0](https://github.com/extra2000/filebeat-formula/compare/v2.1.0...v2.2.0) (2021-05-17)
+
+
+### Features
+
+* **filebeat:** upgrade `v7.12.1` ([561d243](https://github.com/extra2000/filebeat-formula/commit/561d243084cc9e88b4e4218d6072d9b56a8a4a1f))
+
+
+### Fixes
+
+* **filebeat-pod:** allow user to override `readOnly` value ([5bcf4e6](https://github.com/extra2000/filebeat-formula/commit/5bcf4e634cd22a4f7f89ee05b3637c711b372662))
+* **network:** rename `bridge: cni-podman0` to `bridge: cni-podman1` to avoid conflict with rootful Podman ([c50e757](https://github.com/extra2000/filebeat-formula/commit/c50e757110136267120714a41e215ac9b9f5b675))
+
+
+### Code Refactoring
+
+* **defaults, pillar:** rename `filebeat-box` to `beats-box` ([a8d1194](https://github.com/extra2000/filebeat-formula/commit/a8d1194fdfec18bccd1d4921e48e118096613494))
+
 ## [2.1.0](https://github.com/extra2000/filebeat-formula/compare/v2.0.0...v2.1.0) (2021-03-15)
 
 
